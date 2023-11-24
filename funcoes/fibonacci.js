@@ -1,18 +1,19 @@
-function fibonacci(n) {
-    if (n <= 1) {
-        return n;
+function fibonacci(numeroDeTermos) {
+    if (numeroDeTermos <= 1) {
+      return numeroDeTermos;
     } else {
-        return fibonacci(n - 1) + fibonacci(n - 2);
+      return fibonacci(numeroDeTermos - 1) + fibonacci(numeroDeTermos - 2);
     }
 }
-
-const numeroDeTermos = 10;
-for (let i = 0; i < numeroDeTermos; i++) {
-    console.log(fibonacci(i));
+  
+function fibonacciArray(numeroDeTermos) {
+    const result = [];
+  
+    for (let i = 0; i < numeroDeTermos; i++) {
+      result.push(fibonacci(i));
+    }
+  
+    return result;
 }
 
-module.exports = fibonacci;
-
-// const array = [1, 2, 3, 4, 5, 1.5, "texto", true, -3];
-// const fibonacci = fibonnacci(array);
-// console.log(`O array contém ${numerosInteiros} números inteiros.`);
+module.exports = fibonacciArray;

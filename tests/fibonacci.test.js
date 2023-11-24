@@ -1,4 +1,4 @@
-const fibonacciArray = require('../Fibonacci');
+const fibonacciArray = require('../funcoes/fibonacci');
 
 test('Array de 10 numeros na ordem fibonacci', () => 
 {
